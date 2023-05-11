@@ -1,0 +1,44 @@
+@import "./variables";
+#blog{
+    background-color: #FFEFE7;
+    padding: 80px 0;
+    .blog_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 75px;
+    }
+    h1{
+        color: #795744;
+        width: 727px;
+        text-align: center;
+        @media (max-width: 970px) {
+            font-size: 2.5rem;
+            width: 75%;
+        }
+        @media (max-width: 768px) {
+            font-size: 2rem;
+            line-height: 50px;
+        }
+    }
+    .blog_boxes{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 76px 55px;
+    }
+    .blog_box{
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        @media (max-width: 425px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        p{
+            width: 200px;
+            color: #333;
+        }
+    }
+}

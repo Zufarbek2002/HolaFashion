@@ -1,0 +1,57 @@
+@import "./variables";
+#services{
+    margin: 60px 0;
+    .services_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 52px;
+    }
+    h1{
+        width: 850px;
+        text-align: center;
+        @media (max-width: 970px) {
+            font-size: 2.5rem;
+            width: 75%;
+        }
+        @media (max-width: 768px) {
+            font-size: 2rem;
+            line-height: 50px;
+        }
+    }
+    .services_boxes{
+        display: flex;
+        justify-content: center;
+        gap: 26px;
+        @media (max-width: 970px) {
+            flex-wrap: wrap;
+        }
+    }
+    .services_box{
+        background-color: #FAE3D8;
+        border-radius: 20px;
+        img{
+            width: 100%;
+        }
+        &:hover{
+            background-color: $sectionTitleColor;
+            margin: -20px 0;
+            transition: all .6s ease-in-out;
+            p{
+                transition: all .6s ease-in-out;
+                padding-top: 50px;
+                color: $extraColor;
+            }
+        }
+        p{
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 25px 0;
+            line-height: 34px;
+            @media (max-width: 1110px) {
+                width: 70%;
+            }
+        }
+    }
+}

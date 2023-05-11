@@ -1,0 +1,120 @@
+@import "./variables";
+#showcase{
+    .showcase_section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            row-gap: 50px;
+        }
+    }
+    .showcase_img{
+        position: relative;
+        z-index: 0;
+        left: -63px;
+        img{
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            position: static;
+            order: 2;
+        }
+    }
+    .showcase_text{
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+        width: 50%;
+        @media (max-width: 1024px) {
+            gap: 40px;
+        }
+        @media (max-width: 768px) {
+            order: 1;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            margin-top: 20px 0;
+        }
+    }
+    h1{
+        width: 90%;
+        @media (max-width: 1220px) {
+            font-size: 2.5rem;
+            line-height: 65px;
+        }
+        @media (max-width: 1024px) {
+            font-size: 1.5rem;
+            line-height: 40px;
+        }
+    }
+    h2{
+        font-size: 1.5rem;
+        line-height: 42px;
+        letter-spacing: 0.5px;
+        color: $showcaseTextColor;
+        font-weight: 400;
+        width: 85%;
+        @media (max-width: 1220px) {
+            font-size: 1.2rem;
+            line-height: 30px;
+        }
+        @media (max-width: 1024px) {
+            font-size: 1rem;
+            line-height: 25px;
+        }
+    }
+    form{
+        @media (max-width: 1220px) {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+        input{
+            padding: 15px 30px;
+            background-color: $showcaseEmailColor;
+            border: none;
+            outline: none;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            width: 70%;
+            font-size: 1.25rem;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 700;
+            &::placeholder{
+                color: #C4C4C4;
+            }
+            @media (max-width: 1220px) {
+                border-radius: 8px;
+                width: 100%;
+            }
+            @media (max-width: 1024px) {
+                font-size: 1rem;
+            }
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+        .btn{
+            color: $extraColor;
+            background-color: $sectionTitleColor;
+            padding: 15px 22px;
+            border: none;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            cursor: pointer;
+            font-size: 1.25rem;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 700;
+            @media (max-width: 1220px) {
+                border-radius: 8px;
+            }
+            @media (max-width: 1024px) {
+                font-size: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+@import "./variables";
+#contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    h6{
+        margin: 90px 0;
+    }
+    .contact_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 42px 0 150px;
+    }
+    .contact_form{
+        background-color: $sectionTitleColor;
+        width: 100%;
+    }
+    h1{
+        color: $extraColor;
+        width: 600px;
+        text-align: center;
+        @media (max-width: 650px) {
+            width: 80%;
+            font-size: 2.5rem;
+            line-height: 50px;
+        }
+    }
+    .form_boxes{
+        display: flex;
+        gap: 180px;
+        @media (max-width: 1075px) {
+            gap: 80px;
+        }
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+    .form_img{
+        width: 550px;
+        @media (max-width: 950px) {
+            width: 350px;
+        }
+        @media (max-width: 768px) {
+            display: none;
+        }
+    } 
+    img{
+        position: absolute;
+        z-index: 0;
+        left: 160px;
+        bottom: -71px;
+        @media (max-width: 1075px) {
+            left: 50px;
+        }
+        @media (max-width: 950px) {
+            left: 0;
+        }
+        @media (max-width: 860px) {
+            left: -100px;
+        }
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    form{
+        padding-top: 167px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 27px;
+        @media (max-width: 768px) {
+            width: 95%;
+            padding-top: 50px;
+        }
+    } 
+    input{
+        width: 100%;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        padding: 15px 25px;
+        font-size: 20px;
+        font-weight: 400;
+        color: $extraColor;
+        background-color: #E1E1C266;
+        font-family: 'Nunito Sans', sans-serif;
+        &::placeholder{
+            color: $extraColor;
+        }
+    }
+    .name_input{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            row-gap: 27px;
+        }
+        input{
+            width: 45%;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+    button{
+        font-size: 20px;
+        background-color: $textTitleColor;
+        padding: 16px 0;
+        color: $extraColor;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 700;
+    }
+}
